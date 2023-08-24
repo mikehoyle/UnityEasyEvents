@@ -12,15 +12,16 @@ Example usage:
 
 ```
 public class MyDispatch : Dispatch {
-    [EasyEvent] public GameEvent<string, int> OnThingHappening { get; private set; }
-    [EasyEvent] public GameEvent<CustomPayload> OnOtherThingHappening { get; private set; }
+    [EasyEvent] public readonly GameEvent<string, int> OnThingHappening;
+    [EasyEvent] public readonly GameEvent<CustomPayload> OnOtherThingHappening;
 }
 
 -----------------------------------------------------------
 
 public class ExampleMonoBehavior : MonoBehaviour {
     private void Awake() {
-        // Use AddScopedListener to ensure we only get a callback when this component is active and enabled.
+        // Use AddScopedListener to ensure we only get a callback when
+        // this component is active and enabled.
         EasyEvents.Get<MyDispatch>().OnThingHappening.AddScopedListener(HandleThingHappening, this);
     }
     

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace UnityEasyEvents {
   /// <summary>
@@ -8,11 +9,11 @@ namespace UnityEasyEvents {
   /// </summary>
   public abstract class Dispatch {
     protected Dispatch() {
-      foreach (var propertyInfo in GetType().GetProperties()) {
-        if (Attribute.GetCustomAttribute(propertyInfo, typeof(EasyEventAttribute)) != null) {
-          var ctor = propertyInfo.PropertyType.GetConstructor(Type.EmptyTypes);
-          if (ctor != null && propertyInfo.CanWrite) {
-            propertyInfo.SetValue(this, ctor.Invoke(Array.Empty<object>()));
+      foreach (var fieldInfo in GetType().GetFields(BindingFlags.Instance | BindingFlags.Public)) {
+        if (Attribute.GetCustomAttribute(fieldInfo, typeof(EasyEventAttribute)) != null) {
+          var ctor = fieldInfo.FieldType.GetConstructor(Type.EmptyTypes);
+          if (ctor != null) {
+            fieldInfo.SetValue(this, ctor.Invoke(Array.Empty<object>()));
           }
         }
       }
