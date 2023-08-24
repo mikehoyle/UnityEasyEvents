@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEasyEvents", "UnityEasyEvents\UnityEasyEvents.csproj", "{383AA85D-171A-4096-AD52-1F50EA1DC757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEasyEventsTest", "UnityEasyEventsTest\UnityEasyEventsTest.csproj", "{0534CEFE-0610-4A64-A2CE-AC31A6778987}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{383AA85D-171A-4096-AD52-1F50EA1DC757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383AA85D-171A-4096-AD52-1F50EA1DC757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383AA85D-171A-4096-AD52-1F50EA1DC757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383AA85D-171A-4096-AD52-1F50EA1DC757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0534CEFE-0610-4A64-A2CE-AC31A6778987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0534CEFE-0610-4A64-A2CE-AC31A6778987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0534CEFE-0610-4A64-A2CE-AC31A6778987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0534CEFE-0610-4A64-A2CE-AC31A6778987}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

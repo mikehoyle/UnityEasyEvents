@@ -1,9 +1,0 @@
-C:\Users\micha\PersonalProjects\Games\Unity\Libraries\UnityEasyEvents\UnityEasyEvents\bin\Debug\UnityEasyEvents.dll
-C:\Users\micha\PersonalProjects\Games\Unity\Libraries\UnityEasyEvents\UnityEasyEvents\bin\Debug\UnityEasyEvents.pdb
-C:\Users\micha\PersonalProjects\Games\Unity\Libraries\UnityEasyEvents\UnityEasyEvents\bin\Debug\UnityEngine.dll
-C:\Users\micha\PersonalProjects\Games\Unity\Libraries\UnityEasyEvents\UnityEasyEvents\bin\Debug\UnityEngine.xml
-C:\Users\micha\PersonalProjects\Games\Unity\Libraries\UnityEasyEvents\UnityEasyEvents\obj\Debug\UnityEasyEvents.csproj.AssemblyReference.cache
-C:\Users\micha\PersonalProjects\Games\Unity\Libraries\UnityEasyEvents\UnityEasyEvents\obj\Debug\UnityEasyEvents.csproj.CoreCompileInputs.cache
-C:\Users\micha\PersonalProjects\Games\Unity\Libraries\UnityEasyEvents\UnityEasyEvents\obj\Debug\UnityEasyEvents.csproj.CopyComplete
-C:\Users\micha\PersonalProjects\Games\Unity\Libraries\UnityEasyEvents\UnityEasyEvents\obj\Debug\UnityEasyEvents.dll
-C:\Users\micha\PersonalProjects\Games\Unity\Libraries\UnityEasyEvents\UnityEasyEvents\obj\Debug\UnityEasyEvents.pdb
