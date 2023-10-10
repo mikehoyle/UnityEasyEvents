@@ -7,8 +7,12 @@ namespace UnityEasyEvents {
   /// Realistically this isn't any easier than just instantiating the fields yourself, but the attributes provide some
   /// inherent documentation anyways, and enforce some consistency among dispatchers.
   /// </summary>
-  public abstract class Dispatch {
-    protected Dispatch() {
+  public abstract class EventDispatch<T> where T: EventDispatch<T>, new() {
+    private static readonly T Instance = new();
+
+    public static T Get() => Instance;
+    
+    protected EventDispatch() {
       foreach (var fieldInfo in GetType().GetFields(BindingFlags.Instance | BindingFlags.Public)) {
         if (Attribute.GetCustomAttribute(fieldInfo, typeof(EasyEventAttribute)) != null) {
           var ctor = fieldInfo.FieldType.GetConstructor(Type.EmptyTypes);

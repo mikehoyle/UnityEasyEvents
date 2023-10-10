@@ -2,7 +2,7 @@
 using UnityEasyEvents.Events;
 
 namespace UnityEasyEventsTest.Helpers {
-  public class TestDispatch : Dispatch {
+  public class TestEventDispatch : EventDispatch<TestEventDispatch> {
     [EasyEvent] public readonly GameEvent<string> EventOne;
   }
 }

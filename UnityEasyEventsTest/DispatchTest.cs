@@ -7,7 +7,7 @@ namespace UnityEasyEventsTest {
     [Test]
     public void NoEvent() {
       var listener = new TestListener<string>();
-      var dispatch = new TestDispatch();
+      var dispatch = new TestEventDispatch();
       listener.RegisterForEvent(dispatch.EventOne);
 
       Assert.AreEqual(listener.ReceivedEvents.Count, 0);
@@ -17,7 +17,7 @@ namespace UnityEasyEventsTest {
     [Test]
     public void MultipleEvents() {
       var listener = new TestListener<string>();
-      var dispatch = new TestDispatch();
+      var dispatch = new TestEventDispatch();
       listener.RegisterForEvent(dispatch.EventOne);
       
       dispatch.EventOne.Raise("hello");
@@ -37,7 +37,7 @@ namespace UnityEasyEventsTest {
     [Test]
     public void Unsubscribe() {
       var listener = new TestListener<string>();
-      var dispatch = new TestDispatch();
+      var dispatch = new TestEventDispatch();
       listener.RegisterForEvent(dispatch.EventOne);
       
       dispatch.EventOne.Raise("hello");
@@ -56,7 +56,7 @@ namespace UnityEasyEventsTest {
       var listener1 = new TestListener<string>();
       var listener2 = new TestListener<string>();
       var listener3 = new TestListener<string>();
-      var dispatch = new TestDispatch();
+      var dispatch = new TestEventDispatch();
       listener1.RegisterForEvent(dispatch.EventOne);
       listener2.RegisterForEvent(dispatch.EventOne);
       listener3.RegisterForEvent(dispatch.EventOne);

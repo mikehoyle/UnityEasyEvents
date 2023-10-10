@@ -42,8 +42,7 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Dispatch.cs" />
-        <Compile Include="EasyEvents.cs" />
+        <Compile Include="EventDispatch.cs" />
         <Compile Include="EventAttribute.cs" />
         <Compile Include="Events\BaseGameEvent.cs" />
         <Compile Include="Events\ParameterizedGameEvents.cs" />

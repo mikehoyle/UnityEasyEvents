@@ -45,9 +45,9 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="DispatchTest.cs" />
-        <Compile Include="EasyEventsTest.cs" />
+        <Compile Include="SingletonTest.cs" />
         <Compile Include="Helpers\TestListener.cs" />
-        <Compile Include="Helpers\TestDispatch.cs" />
+        <Compile Include="Helpers\TestEventDispatch.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <ItemGroup>

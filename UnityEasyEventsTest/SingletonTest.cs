@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using UnityEasyEvents;
 using UnityEasyEventsTest.Helpers;
 
 namespace UnityEasyEventsTest {
@@ -8,12 +7,12 @@ namespace UnityEasyEventsTest {
   /// we just include a single test for our simple singleton to avoid any persistent state issues.
   /// </summary>
   [TestFixture]
-  public class EasyEventsTest {
+  public class SingletonTest {
     [Test]
-    public void UseEasyEventsInterface() {
+    public void UseSingletonInterface() {
       var listener = new TestListener<string>();
-      listener.RegisterForEvent(EasyEvents.Get<TestDispatch>().EventOne);
-      EasyEvents.Get<TestDispatch>().EventOne.Raise("hello");
+      listener.RegisterForEvent(TestEventDispatch.Get().EventOne);
+      TestEventDispatch.Get().EventOne.Raise("hello");
       
       Assert.AreEqual(listener.ReceivedEvents.Count, 1);
       Assert.AreEqual(listener.ReceivedEvents[0], "hello");
